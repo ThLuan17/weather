@@ -307,6 +307,9 @@ img {
 .navbar {
   background-color: var(--color-2);
 }
+.nav-list {
+  overflow-x: scroll;
+}
 .nav-list-item::before {
   visibility: hidden;
   content: "";
