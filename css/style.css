@@ -2,10 +2,10 @@
 :root {
   --tran-1: all ease 0.3s;
   --color-1: #0172a7;
-  --color-2: #313050;
+  --color-2: #022d50;
   --color-3: #ec0000;
   --color-5: #0c0a0a;
-  --color-6: #eaeaea;
+  --color-6: #d9d9d9;
   --color-7: #fff;
   --radius: 7px;
 }
@@ -21,6 +21,7 @@ body {
   margin: 0;
   background: #fff;
   z-index: 1;
+  background: linear-gradient(180deg, var(--color-2) 0%, var(--color-1) 100%);
 }
 button {
   border-radius: 0;
@@ -134,10 +135,11 @@ img {
   left: 0;
   background-color: rgba(255, 255, 255, .2);
 }
-/* begin header */
+/* begin header dùng chung */
 .header {
   background-color: var(--color-2);
 }
+/* end */
 .header .logo svg {
   width: 60px;
   height: 60px;
@@ -302,6 +304,9 @@ img {
   font-size: 1.5rem;
   color: var(--color-7);
 }
+.carousel-home-desc .carousel-alert {
+  
+}
 /* end owl carousel */
 /* begin navbar */
 .navbar {
@@ -335,6 +340,167 @@ img {
 .content {
   display: grid;
   grid-template-columns: 70% 30%;
+  gap: 20px;
+}
+.current-condition {
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+.current-condition-header {
+  z-index: 1;
+}
+.current-condition-header::before {
+  background-color: var(--color-5);
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  opacity: .5;
+  z-index: -1;
+}
+.current-condition-location {
+  font-size: 2rem;
+  color: var(--color-7);
+}
+.current-condition-time {
+  font-size: 1.5rem;
+  color: var(--color-7);
+}
+.current-condition-primary {
+  color: var(--color-7);
+}
+.current-condition-temp {
+  font-size: 8rem;
+  line-height: 1;
+  font-weight: 700;
+}
+.current-condition-desc {
+  font-size: 2rem;
+}
+.current-condition-alltemp {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+.current-condition-secondary {
+  
+}
+.current-condition-secondary img {
+  min-width: 150px;
+}
+.current-condition-messaging {
+ background-color: var(--color-5);
+ border-radius: var(--radius);
+}
+.messaging-headline {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-7);
+}
+.current-condition-messaging a {
+  color: var(--color-7);
+}
+.current-condition-messaging svg {
+  width: 18px;
+  fill: var(--color-7);
+}
+/* card content dùng chung */
+.card-content {
+  background-color: var(--color-7);
+  border-radius: var(--radius);
+}
+/* end */
+/* card weather */
+.weather-table-body {
+  overflow-x: unset;
+}
+.weather-table-col {
+  width: 100%;
+}
+.weather-table-col a {
+  color: var(--color-5);
+  opacity: .5;
+}
+.weather-table-col.active a {
+  color: var(--color-1);
+  opacity: 1;
+}
+.weather-table-col.next a {
+  color: var(--color-1);
+  opacity: .7;
+}
+.weather-table-col:not(:last-child) {
+  border-right: 1px solid var(--color-6);
+}
+.weather-table-time {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.weather-table-temp {
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 1;
+}
+.percent-rain {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.percent-rain svg {
+  width: 7px;
+  fill: var(--color-1);
+}
+/* begin card heading */
+.card-heading {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: var(--color-5);
+}
+/* end card heading */
+/* primary btn */
+.primary-btn {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--color-7);
+  background-color: #1b4de4;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+}
+.primary-btn:hover {
+  box-shadow: 0px 0px 15px 0px rgba(27,77,228,0.45);
+}
+/* end primary btn */
+/* begin weather details */
+.weather-details-temp-feelslike {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--color-5);
+}
+.weather-details-temp-value {
+  font-size: 5rem;
+  font-weight: 700;
+  color: var(--color-5);
+}
+.weather-details-sunrise {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--color-5);
+  text-wrap: nowrap;
+}
+.weather-details-sunrise i {
+  color: #ec0000;
+}
+.weather-details-body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 30px;
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: var(--color-5);
+}
+.weather-details-row:not(:first-child) {
+  border-top: 1px solid var(--color-6);
 }
 /* responsive */
 @media (min-width: 0px) {
@@ -350,8 +516,32 @@ img {
     right: 0;
     top: 0;
   }
+  .messaging-headline {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .content {
+    grid-template-columns: 100%;
+  }
+  .weather-table-body {
+    /* overflow-x: scroll; */
+  }
+  .weather-table-time {
+    font-size: 1.1rem;
+  }
+  .weather-table-temp {
+    font-size: 3rem;
+  }
+  .weather-table-col img {
+    width: 40px;
+  }
+  .weather-details-body {
+    grid-template-columns: 100%;
+  }
 }
-@media (min-width: 243px) {
+@media (min-width: 310px) {
   .header .logo svg {
     width: 50px;
     height: 50px;
@@ -363,6 +553,24 @@ img {
     position: absolute;
     right: 0;
     top: 0;
+  }
+  .content {
+    grid-template-columns: 100%;
+  }
+  .weather-table-body {
+    overflow-x: unset;
+  }
+  .weather-table-time {
+    font-size: 1.3rem;
+  }
+  .weather-table-temp {
+    font-size: 4rem;
+  }
+  .weather-table-col img {
+    width: 50px;
+  }
+  .weather-details-body {
+    grid-template-columns: 100%;
   }
 }
 @media (min-width: 354px) {
@@ -377,6 +585,21 @@ img {
     position: absolute;
     right: 0;
     top: 0;
+  }
+  .weather-table-body {
+    overflow-x: unset;
+  }
+  .weather-table-time {
+    font-size: 1.4rem;
+  }
+  .weather-table-temp {
+    font-size: 5rem;
+  }
+  .weather-table-col img {
+    width: 60px;
+  }
+  .weather-details-body {
+    grid-template-columns: 1fr;
   }
 }
 @media (min-width: 576px) {
@@ -393,6 +616,24 @@ img {
     right: 0;
     transform: unset;
   }
+  .content {
+    grid-template-columns: 100%;
+  }
+  .weather-table-body {
+    overflow-x: unset;
+  }
+  .weather-table-time {
+    font-size: 1.5rem;
+  }
+  .weather-table-temp {
+    font-size: 6rem;
+  }
+  .weather-table-col img {
+    width: 60px;
+  }
+  .weather-details-body {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 @media (min-width: 768px) {
   .header .logo svg {
@@ -408,5 +649,26 @@ img {
     top: unset;
     right: 0;
     transform: unset;
+  }
+  .nav-list::-webkit-scrollbar {
+    display: none;
+  }
+  .content {
+    grid-template-columns: 70% 30%;
+  }
+  .weather-table-body {
+    overflow-x: unset;
+  }
+  .weather-table-time {
+    font-size: 1.5rem;
+  }
+  .weather-table-temp {
+    font-size: 7rem;
+  }
+  .weather-table-col img {
+    width: 64px;
+  }
+  .weather-details-body {
+    grid-template-columns: 1fr 1fr;
   }
 }
