@@ -305,7 +305,7 @@ img {
   color: var(--color-7);
 }
 .carousel-home-desc .carousel-alert {
-  
+
 }
 /* end owl carousel */
 /* begin navbar */
@@ -501,6 +501,19 @@ img {
 }
 .weather-details-row:not(:first-child) {
   border-top: 1px solid var(--color-6);
+}
+/* begin media item*/ 
+.media-item-link img {
+  object-fit: cover;
+  border-radius: var(--radius);
+}
+.media-item-link p {
+  font-size: 1.3rem;
+  font-weight: 400;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 /* responsive */
 @media (min-width: 0px) {
