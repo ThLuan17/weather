@@ -545,28 +545,40 @@
                     <h2 class="card-heading">Don't Miss</h2>
                     <div class="media-list d-flex align-items-center">
                         <div class="d-flex flex-column align-items-center justify-content-between py-3 px-2">
-                            <a href="#" class="d-block media-item-link">
+                            <a href="#" class="d-block rlt media-item-link">
+                                <i class="media-play-icon fa-regular fa-circle-play"></i>
                                 <img src="images/DCT_SPECIAL101_1280x720.webp" alt="" class="img-fluid">
-                                <p class="media-item-text">Get the latest weather forecast for today in California, MD</p>
                             </a>
+                            <p class="media-item-text">
+                                <a href="#">Get the latest weather forecast for today in California, MD</a>
+                            </p>
                         </div> 
                         <div class="d-flex flex-column align-items-center justify-content-between py-3 px-2">
-                            <a href="#" class="d-block media-item-link">
+                            <a href="#" class="d-block rlt media-item-link">
+                                <i class="media-play-icon fa-regular fa-circle-play"></i>
                                 <img src="images/DCT_SPECIAL101_1280x720.webp" alt="" class="img-fluid">
-                                <p class="media-item-text">Get the latest weather forecast for today in California, MD</p>
                             </a>
+                            <p class="media-item-text">
+                                <a href="#">Get the latest weather forecast for today in California, MD</a>
+                            </p>
                         </div>  
                         <div class="d-flex flex-column align-items-center justify-content-between py-3 px-2">
-                            <a href="#" class="d-block media-item-link">
+                            <a href="#" class="d-block rlt media-item-link">
+                                <i class="media-play-icon fa-regular fa-circle-play"></i>
                                 <img src="images/DCT_SPECIAL101_1280x720.webp" alt="" class="img-fluid">
-                                <p class="media-item-text">Get the latest weather forecast for today in California, MD</p>
                             </a>
+                            <p class="media-item-text">
+                                <a href="#">Get the latest weather forecast for today in California, MD</a>
+                            </p>
                         </div>  
                         <div class="d-flex flex-column align-items-center justify-content-between py-3 px-2">
-                            <a href="#" class="d-block media-item-link">
+                            <a href="#" class="d-block rlt media-item-link">
+                                <i class="media-play-icon fa-regular fa-circle-play"></i>
                                 <img src="images/DCT_SPECIAL101_1280x720.webp" alt="" class="img-fluid">
-                                <p class="media-item-text">Get the latest weather forecast for today in California, MD</p>
                             </a>
+                            <p class="media-item-text">
+                                <a href="#">Get the latest weather forecast for today in California, MD</a>
+                            </p>
                         </div>   
                     </div>
                 </div>
@@ -607,7 +619,30 @@
                     items:3
                 }
             }
-        })
+        });
+        // donut chart
+        const DonutChart = new Chart('donut-chart', {
+            type: 'doughnut',
+            data: {  
+                datasets: [{
+                    data: [50, 50],
+                    backgroundColor: [
+                    'rgb(255, 205, 86)'
+                    ],
+                    hoverOffset: 4
+                }]
+                },
+            options: {
+                legend: {
+                    display: false
+            },
+            scales: {
+                y: {
+                beginAtZero: true
+                }
+            }
+            }
+        });
     </script>
 </body>
 </html>
