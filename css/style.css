@@ -515,6 +515,12 @@ img {
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
+/* begin air quality */
+.air-quality-desc {
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 1.8;
+}
 /* responsive */
 @media (min-width: 0px) {
   .header .logo svg {

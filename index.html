@@ -570,13 +570,25 @@
                         </div>   
                     </div>
                 </div>
-            <div class="side-content"></div>
+            </div>
+            <div class="side-content">
+                <div class="card-content p-3 mt-3">
+                    <div class="air-quality">
+                        <canvas class="air-quality-chart flex-grow-0" id="donut-chart"></canvas>
+                        <p class="air-quality-desc flex-grow-1">
+                            Air quality is acceptable; however, for some pollutants there may be a moderate health concern for a very small number of people who are unusually sensitive to air pollution.
+                        </p>
+                    </div>
+                    <button class="primary-btn py-2 px-3">See details</button>
+                </div>
+            </div>
         </div>
     </div>
     <!-- end main content -->
     <!-- link js -->
     <script src="vendor/jquery/jquery-3.6.0.min.js"></script>
     <script src="vendor/owlCarousel/js/owl.carousel.js"></script>
+    <script src="vendor/ChartJs/chart.min.js"></script>
     <script>
         $('.current-condition').css('background', 'url(images/WeatherImage_Clear-night_1.webp) no-repeat center center / cover');
         // owl carousel
