@@ -519,7 +519,7 @@ img {
   object-fit: cover;
   border-radius: var(--radius);
 }
-.media-item-link p {
+.media-item-desc {
   font-size: 1.3rem;
   font-weight: 400;
   display: -webkit-box;
