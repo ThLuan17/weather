@@ -551,8 +551,9 @@ img {
  font-size: 1.3rem;
  font-weight: 400;
 }
-.footer-contact-icon {
-  font-size: 3rem;
+.footer-contact-icon:hover {
+  transform: scale(1.1);
+  transition: var(--tran-1);
 }
 .footer-cpright {
   font-size: 1.3rem;
