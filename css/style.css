@@ -387,18 +387,19 @@ img {
   z-index: -1;
 }
 .current-condition-location {
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: var(--color-7);
 }
 .current-condition-time {
   font-size: 1.5rem;
   color: var(--color-7);
+  text-wrap: nowrap;
 }
 .current-condition-primary {
   color: var(--color-7);
 }
 .current-condition-temp {
-  font-size: 8rem;
+  font-size: 6rem;
   line-height: 1;
   font-weight: 700;
 }
@@ -631,6 +632,9 @@ img {
   .weather-table-temp {
     font-size: 3rem;
   }
+  .weather-details-sunrise {
+    font-size: 1.3rem;
+  }
   .weather-table-col img {
     width: 40px;
   }
@@ -751,6 +755,9 @@ img {
   }
   .weather-table-temp {
     font-size: 6rem;
+  }
+  .weather-details-temp-value {
+    font-size: 4rem;
   }
   .weather-table-col img {
     width: 60px;
