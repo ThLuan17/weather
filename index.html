@@ -25,14 +25,14 @@
             <!-- end logo -->
             <!-- begin search form -->
             <form action="" class="search-form rlt d-flex align-items-center mx-auto">
-                <input type="text" placeholder="Search City or Zip Code" class="text-center search-form-input">
+                <input type="text" placeholder="Tìm kiếm thành phố" class="text-center search-form-input">
                 <button class="search-form-btn px-4">
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </button>
                 <div class="search-history">
                     <div class="search-history-header d-flex align-items-center justify-content-between py-3 px-3">
-                        <span>Search History</span>
-                        <button class="search-history-clear-btn">Clear All</button>
+                        <span>Lịch sử tìm kiếm</span>
+                        <button class="search-history-clear-btn">Xóa tất cả</button>
                     </div>
                     <ul class="search-history-list list-unstyled p-0">
                         <li class="search-history-item">
@@ -65,249 +65,251 @@
             <!-- end languages selecter -->
         </div>
         <!-- begin languages-menu -->
-        <div class="languages-menu container">
-            <div class="unit-selecter d-flex align-items-center py-3">
-                <div class="unit-selecter-btns">
-                    <button class="unit-selecter-btn active py-2 px-3">°F</button>
-                    <button class="unit-selecter-btn py-2 px-3">°C</button>
-                    <button class="unit-selecter-btn py-2 px-3">Hybrid</button>
+        <div class="languages-menu" id="languages-menu">
+            <div class="container">
+                <div class="unit-selecter d-sm-flex d-block align-items-center py-3">
+                    <div class="unit-selecter-btns">
+                        <button class="unit-selecter-btn active py-2 px-3">°F</button>
+                        <button class="unit-selecter-btn py-2 px-3">°C</button>
+                        <button class="unit-selecter-btn py-2 px-3">Hybrid</button>
+                    </div>
+                    <span class="unit-selecter-desc d-block pl-3 pt-2 pt-sm-0">°F / mph / miles / inches</span>
                 </div>
-                <span class="unit-selecter-desc pl-3">°F / mph / miles / inches</span>
-            </div>
-            <div class="languages-menu-section">
-                <h3 class="languages-menu-title d-flex align-items-center justify-content-between py-3">
-                    Americas
-                    <i class="fa-solid fa-chevron-down"></i>
-                </h3>
-                <div class="languages-menu-lists active">
-                    <ul class="languages-menu-list list-unstyled p-0">
-                        <li class="languages-menu-item">
-                            <a href="#">Argentina</a>
-                        </li>
-                        <li class="languages-menu-item">
-                            <a href="#">Mexico</a>
-                        </li>
-                        <li class="languages-menu-item">
-                            <a href="#">Ecuador</a>
-                        </li>
-                        <li class="languages-menu-item">
-                            <a href="#">Canada</a>
-                        </li>
-                        <li class="languages-menu-item">
-                            <a href="#">Costa Rica</a>
-                        </li>
-                    </ul>
-                    <ul class="languages-menu-list list-unstyled p-0">
-                        <li class="languages-menu-item">
-                            <a href="#">Argentina</a>
-                        </li>
-                        <li class="languages-menu-item">
-                            <a href="#">Mexico</a>
-                        </li>
-                        <li class="languages-menu-item">
-                            <a href="#">Ecuador</a>
-                        </li>
-                        <li class="languages-menu-item">
-                            <a href="#">Canada</a>
-                        </li>
-                        <li class="languages-menu-item">
-                            <a href="#">Costa Rica</a>
-                        </li>
-                    </ul>
-                    <ul class="languages-menu-list list-unstyled p-0">
-                        <li class="languages-menu-item">
-                            <a href="#">Argentina</a>
-                        </li>
-                        <li class="languages-menu-item">
-                            <a href="#">Mexico</a>
-                        </li>
-                        <li class="languages-menu-item">
-                            <a href="#">Ecuador</a>
-                        </li>
-                        <li class="languages-menu-item">
-                            <a href="#">Canada</a>
-                        </li>
-                        <li class="languages-menu-item">
-                            <a href="#">Costa Rica</a>
-                        </li>
-                    </ul>
+                <div class="languages-menu-section">
+                    <h3 class="languages-menu-title d-flex align-items-center justify-content-between py-3">
+                        Americas
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </h3>
+                    <div class="languages-menu-lists active">
+                        <ul class="languages-menu-list list-unstyled p-0 m-0">
+                            <li class="languages-menu-item my-2 pb-2">
+                                <a href="#">Argentina</a>
+                            </li>
+                            <li class="languages-menu-item my-2 pb-2">
+                                <a href="#">Mexico</a>
+                            </li>
+                            <li class="languages-menu-item my-2 pb-2">
+                                <a href="#">Ecuador</a>
+                            </li>
+                            <li class="languages-menu-item my-2 pb-2">
+                                <a href="#">Canada</a>
+                            </li>
+                            <li class="languages-menu-item my-2 pb-2">
+                                <a href="#">Costa Rica</a>
+                            </li>
+                        </ul>
+                        <ul class="languages-menu-list list-unstyled p-0 m-0">
+                            <li class="languages-menu-item my-2 pb-2">
+                                <a href="#">Argentina</a>
+                            </li>
+                            <li class="languages-menu-item my-2 pb-2">
+                                <a href="#">Mexico</a>
+                            </li>
+                            <li class="languages-menu-item my-2 pb-2">
+                                <a href="#">Ecuador</a>
+                            </li>
+                            <li class="languages-menu-item my-2 pb-2">
+                                <a href="#">Canada</a>
+                            </li>
+                            <li class="languages-menu-item my-2 pb-2">
+                                <a href="#">Costa Rica</a>
+                            </li>
+                        </ul>
+                        <ul class="languages-menu-list list-unstyled p-0 m-0">
+                            <li class="languages-menu-item my-2 pb-2">
+                                <a href="#">Argentina</a>
+                            </li>
+                            <li class="languages-menu-item my-2 pb-2">
+                                <a href="#">Mexico</a>
+                            </li>
+                            <li class="languages-menu-item my-2 pb-2">
+                                <a href="#">Ecuador</a>
+                            </li>
+                            <li class="languages-menu-item my-2 pb-2">
+                                <a href="#">Canada</a>
+                            </li>
+                            <li class="languages-menu-item my-2 pb-2">
+                                <a href="#">Costa Rica</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-            <div class="languages-menu-section">
-                <h3 class="languages-menu-title d-flex align-items-center justify-content-between py-3">
-                    Americas
-                    <i class="fa-solid fa-chevron-down"></i>
-                </h3>
-                <div class="languages-menu-lists">
-                    <ul class="languages-menu-list list-unstyled p-0">
-                        <li class="languages-menu-item">
-                            <a href="#">Argentina</a>
-                        </li>
-                        <li class="languages-menu-item">
-                            <a href="#">Mexico</a>
-                        </li>
-                        <li class="languages-menu-item">
-                            <a href="#">Ecuador</a>
-                        </li>
-                        <li class="languages-menu-item">
-                            <a href="#">Canada</a>
-                        </li>
-                        <li class="languages-menu-item">
-                            <a href="#">Costa Rica</a>
-                        </li>
-                    </ul>
-                    <ul class="languages-menu-list list-unstyled p-0">
-                        <li class="languages-menu-item">
-                            <a href="#">Argentina</a>
-                        </li>
-                        <li class="languages-menu-item">
-                            <a href="#">Mexico</a>
-                        </li>
-                        <li class="languages-menu-item">
-                            <a href="#">Ecuador</a>
-                        </li>
-                        <li class="languages-menu-item">
-                            <a href="#">Canada</a>
-                        </li>
-                        <li class="languages-menu-item">
-                            <a href="#">Costa Rica</a>
-                        </li>
-                    </ul>
-                    <ul class="languages-menu-list list-unstyled p-0">
-                        <li class="languages-menu-item">
-                            <a href="#">Argentina</a>
-                        </li>
-                        <li class="languages-menu-item">
-                            <a href="#">Mexico</a>
-                        </li>
-                        <li class="languages-menu-item">
-                            <a href="#">Ecuador</a>
-                        </li>
-                        <li class="languages-menu-item">
-                            <a href="#">Canada</a>
-                        </li>
-                        <li class="languages-menu-item">
-                            <a href="#">Costa Rica</a>
-                        </li>
-                    </ul>
+                <div class="languages-menu-section">
+                    <h3 class="languages-menu-title d-flex align-items-center justify-content-between py-3">
+                        Americas
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </h3>
+                    <div class="languages-menu-lists">
+                        <ul class="languages-menu-list list-unstyled p-0 m-0">
+                            <li class="languages-menu-item my-2 pb-2">
+                                <a href="#">Argentina</a>
+                            </li>
+                            <li class="languages-menu-item my-2 pb-2">
+                                <a href="#">Mexico</a>
+                            </li>
+                            <li class="languages-menu-item my-2 pb-2">
+                                <a href="#">Ecuador</a>
+                            </li>
+                            <li class="languages-menu-item my-2 pb-2">
+                                <a href="#">Canada</a>
+                            </li>
+                            <li class="languages-menu-item my-2 pb-2">
+                                <a href="#">Costa Rica</a>
+                            </li>
+                        </ul>
+                        <ul class="languages-menu-list list-unstyled p-0 m-0">
+                            <li class="languages-menu-item my-2 pb-2">
+                                <a href="#">Argentina</a>
+                            </li>
+                            <li class="languages-menu-item my-2 pb-2">
+                                <a href="#">Mexico</a>
+                            </li>
+                            <li class="languages-menu-item my-2 pb-2">
+                                <a href="#">Ecuador</a>
+                            </li>
+                            <li class="languages-menu-item my-2 pb-2">
+                                <a href="#">Canada</a>
+                            </li>
+                            <li class="languages-menu-item my-2 pb-2">
+                                <a href="#">Costa Rica</a>
+                            </li>
+                        </ul>
+                        <ul class="languages-menu-list list-unstyled p-0 m-0">
+                            <li class="languages-menu-item my-2 pb-2">
+                                <a href="#">Argentina</a>
+                            </li>
+                            <li class="languages-menu-item my-2 pb-2">
+                                <a href="#">Mexico</a>
+                            </li>
+                            <li class="languages-menu-item my-2 pb-2">
+                                <a href="#">Ecuador</a>
+                            </li>
+                            <li class="languages-menu-item my-2 pb-2">
+                                <a href="#">Canada</a>
+                            </li>
+                            <li class="languages-menu-item my-2 pb-2">
+                                <a href="#">Costa Rica</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-            <div class="languages-menu-section">
-                <h3 class="languages-menu-title d-flex align-items-center justify-content-between py-3">
-                    Americas
-                    <i class="fa-solid fa-chevron-down"></i>
-                </h3>
-                <div class="languages-menu-lists">
-                    <ul class="languages-menu-list list-unstyled p-0">
-                        <li class="languages-menu-item">
-                            <a href="#">Argentina</a>
-                        </li>
-                        <li class="languages-menu-item">
-                            <a href="#">Mexico</a>
-                        </li>
-                        <li class="languages-menu-item">
-                            <a href="#">Ecuador</a>
-                        </li>
-                        <li class="languages-menu-item">
-                            <a href="#">Canada</a>
-                        </li>
-                        <li class="languages-menu-item">
-                            <a href="#">Costa Rica</a>
-                        </li>
-                    </ul>
-                    <ul class="languages-menu-list list-unstyled p-0">
-                        <li class="languages-menu-item">
-                            <a href="#">Argentina</a>
-                        </li>
-                        <li class="languages-menu-item">
-                            <a href="#">Mexico</a>
-                        </li>
-                        <li class="languages-menu-item">
-                            <a href="#">Ecuador</a>
-                        </li>
-                        <li class="languages-menu-item">
-                            <a href="#">Canada</a>
-                        </li>
-                        <li class="languages-menu-item">
-                            <a href="#">Costa Rica</a>
-                        </li>
-                    </ul>
-                    <ul class="languages-menu-list list-unstyled p-0">
-                        <li class="languages-menu-item">
-                            <a href="#">Argentina</a>
-                        </li>
-                        <li class="languages-menu-item">
-                            <a href="#">Mexico</a>
-                        </li>
-                        <li class="languages-menu-item">
-                            <a href="#">Ecuador</a>
-                        </li>
-                        <li class="languages-menu-item">
-                            <a href="#">Canada</a>
-                        </li>
-                        <li class="languages-menu-item">
-                            <a href="#">Costa Rica</a>
-                        </li>
-                    </ul>
+                <div class="languages-menu-section">
+                    <h3 class="languages-menu-title d-flex align-items-center justify-content-between py-3">
+                        Americas
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </h3>
+                    <div class="languages-menu-lists">
+                        <ul class="languages-menu-list list-unstyled p-0 m-0">
+                            <li class="languages-menu-item my-2 pb-2">
+                                <a href="#">Argentina</a>
+                            </li>
+                            <li class="languages-menu-item my-2 pb-2">
+                                <a href="#">Mexico</a>
+                            </li>
+                            <li class="languages-menu-item my-2 pb-2">
+                                <a href="#">Ecuador</a>
+                            </li>
+                            <li class="languages-menu-item my-2 pb-2">
+                                <a href="#">Canada</a>
+                            </li>
+                            <li class="languages-menu-item my-2 pb-2">
+                                <a href="#">Costa Rica</a>
+                            </li>
+                        </ul>
+                        <ul class="languages-menu-list list-unstyled p-0 m-0">
+                            <li class="languages-menu-item my-2 pb-2">
+                                <a href="#">Argentina</a>
+                            </li>
+                            <li class="languages-menu-item my-2 pb-2">
+                                <a href="#">Mexico</a>
+                            </li>
+                            <li class="languages-menu-item my-2 pb-2">
+                                <a href="#">Ecuador</a>
+                            </li>
+                            <li class="languages-menu-item my-2 pb-2">
+                                <a href="#">Canada</a>
+                            </li>
+                            <li class="languages-menu-item my-2 pb-2">
+                                <a href="#">Costa Rica</a>
+                            </li>
+                        </ul>
+                        <ul class="languages-menu-list list-unstyled p-0 m-0">
+                            <li class="languages-menu-item my-2 pb-2">
+                                <a href="#">Argentina</a>
+                            </li>
+                            <li class="languages-menu-item my-2 pb-2">
+                                <a href="#">Mexico</a>
+                            </li>
+                            <li class="languages-menu-item my-2 pb-2">
+                                <a href="#">Ecuador</a>
+                            </li>
+                            <li class="languages-menu-item my-2 pb-2">
+                                <a href="#">Canada</a>
+                            </li>
+                            <li class="languages-menu-item my-2 pb-2">
+                                <a href="#">Costa Rica</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-            <div class="languages-menu-section">
-                <h3 class="languages-menu-title d-flex align-items-center justify-content-between py-3">
-                    Americas
-                    <i class="fa-solid fa-chevron-down"></i>
-                </h3>
-                <div class="languages-menu-lists">
-                    <ul class="languages-menu-list list-unstyled p-0">
-                        <li class="languages-menu-item">
-                            <a href="#">Argentina</a>
-                        </li>
-                        <li class="languages-menu-item">
-                            <a href="#">Mexico</a>
-                        </li>
-                        <li class="languages-menu-item">
-                            <a href="#">Ecuador</a>
-                        </li>
-                        <li class="languages-menu-item">
-                            <a href="#">Canada</a>
-                        </li>
-                        <li class="languages-menu-item">
-                            <a href="#">Costa Rica</a>
-                        </li>
-                    </ul>
-                    <ul class="languages-menu-list list-unstyled p-0">
-                        <li class="languages-menu-item">
-                            <a href="#">Argentina</a>
-                        </li>
-                        <li class="languages-menu-item">
-                            <a href="#">Mexico</a>
-                        </li>
-                        <li class="languages-menu-item">
-                            <a href="#">Ecuador</a>
-                        </li>
-                        <li class="languages-menu-item">
-                            <a href="#">Canada</a>
-                        </li>
-                        <li class="languages-menu-item">
-                            <a href="#">Costa Rica</a>
-                        </li>
-                    </ul>
-                    <ul class="languages-menu-list list-unstyled p-0">
-                        <li class="languages-menu-item">
-                            <a href="#">Argentina</a>
-                        </li>
-                        <li class="languages-menu-item">
-                            <a href="#">Mexico</a>
-                        </li>
-                        <li class="languages-menu-item">
-                            <a href="#">Ecuador</a>
-                        </li>
-                        <li class="languages-menu-item">
-                            <a href="#">Canada</a>
-                        </li>
-                        <li class="languages-menu-item">
-                            <a href="#">Costa Rica</a>
-                        </li>
-                    </ul>
+                <div class="languages-menu-section">
+                    <h3 class="languages-menu-title d-flex align-items-center justify-content-between py-3">
+                        Americas
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </h3>
+                    <div class="languages-menu-lists">
+                        <ul class="languages-menu-list list-unstyled p-0 m-0">
+                            <li class="languages-menu-item my-2 pb-2">
+                                <a href="#">Argentina</a>
+                            </li>
+                            <li class="languages-menu-item my-2 pb-2">
+                                <a href="#">Mexico</a>
+                            </li>
+                            <li class="languages-menu-item my-2 pb-2">
+                                <a href="#">Ecuador</a>
+                            </li>
+                            <li class="languages-menu-item my-2 pb-2">
+                                <a href="#">Canada</a>
+                            </li>
+                            <li class="languages-menu-item my-2 pb-2">
+                                <a href="#">Costa Rica</a>
+                            </li>
+                        </ul>
+                        <ul class="languages-menu-list list-unstyled p-0 m-0">
+                            <li class="languages-menu-item my-2 pb-2">
+                                <a href="#">Argentina</a>
+                            </li>
+                            <li class="languages-menu-item my-2 pb-2">
+                                <a href="#">Mexico</a>
+                            </li>
+                            <li class="languages-menu-item my-2 pb-2">
+                                <a href="#">Ecuador</a>
+                            </li>
+                            <li class="languages-menu-item my-2 pb-2">
+                                <a href="#">Canada</a>
+                            </li>
+                            <li class="languages-menu-item my-2 pb-2">
+                                <a href="#">Costa Rica</a>
+                            </li>
+                        </ul>
+                        <ul class="languages-menu-list list-unstyled p-0 m-0">
+                            <li class="languages-menu-item my-2 pb-2">
+                                <a href="#">Argentina</a>
+                            </li>
+                            <li class="languages-menu-item my-2 pb-2">
+                                <a href="#">Mexico</a>
+                            </li>
+                            <li class="languages-menu-item my-2 pb-2">
+                                <a href="#">Ecuador</a>
+                            </li>
+                            <li class="languages-menu-item my-2 pb-2">
+                                <a href="#">Canada</a>
+                            </li>
+                            <li class="languages-menu-item my-2 pb-2">
+                                <a href="#">Costa Rica</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -323,8 +325,8 @@
                         <img src="images/weatherIcon/night/227.png" alt="">
                     </a>
                     <a href="#" class="carousel-home-desc">
-                        <span class="px-3">4°</span>
-                        <span>Califonia, MD</span>
+                        <span class="px-3">29°</span>
+                        <span>Tp. Hồ Chí Minh, Việt Nam</span>
                         <span class="carousel-alert">2</span>
                     </a>
                 </div>
@@ -357,13 +359,13 @@
         <div class="container">
                 <ul class="nav-list list-unstyled d-flex align-items-center p-0 m-0">
                     <li class="nav-list-item active rlt px-3 py-3 mx-5">
-                        <a href="#">Today</a>
+                        <a href="#">Hôm nay</a>
                     </li>
                     <li class="nav-list-item rlt px-3 py-3 mx-5">
-                        <a href="#">Weekend</a>
+                        <a href="#">Tuần này</a>
                     </li>
                     <li class="nav-list-item rlt px-3 py-3 mx-5">
-                        <a href="#">Monthly</a>
+                        <a href="#">Tháng này</a>
                     </li>
                 </ul>
         </div>
@@ -375,19 +377,19 @@
             <div class="main-content">
                 <div class="current-condition mt-3">
                     <div class="current-condition-header rlt d-flex align-items-center p-3">
-                        <h2 class="current-condition-location">California, MD</h2>
+                        <h2 class="current-condition-location">Tp. Hồ Chí Minh, Việt Nam</h2>
                         <span class="current-condition-time ml-2">8:41 am</span>
                     </div>
                     <div class="current-condition-body p-3">
                         <div class="current-condition-column d-flex align-items-center justify-content-between">
                             <div class="current-condition-primary">
-                                <span class="current-condition-temp d-block">4°</span>
-                                <div class="current-condition-desc">Mostly Cloudy</div>
+                                <span class="current-condition-temp d-block">29°</span>
+                                <div class="current-condition-desc">Nhiều mây</div>
                                 <div class="current-condition-alltemp">
-                                    Day
-                                    <span class="alltemp-value">48°</span>
-                                    Night
-                                    <span class="alltemp-value">4°</span>
+                                    Ngày
+                                    <span class="alltemp-value">32°</span>
+                                    Đêm
+                                    <span class="alltemp-value">25°</span>
                                 </div>
                             </div>
                             <div class="current-condition-secondary d-flex align-items-center">
@@ -404,35 +406,35 @@
                                 </g>
                             </svg>
                             <h2 class="messaging-headline">
-                                <a href="#">Coastal Flood Watch +1 More</a>
+                                <a href="#">Theo dõi thêm</a>
                             </h2>
                         </div>
                     </div>
                 </div>
                 <div class="card-content p-3 mt-3">
-                    <h2 class="card-heading">Today's Forecast for California, MD</h2>
+                    <h2 class="card-heading">Dự báo thời tiết hôm nay tại Tp. Hồ Chí Minh, Việt Nam</h2>
                     <div class="d-block">
                         <div class="weather-table-body d-flex align-items-center my-3">
                             <div class="weather-table-col">
                                 <a href="#" class="d-flex flex-column align-items-center justify-content-between p-1">
-                                    <span class="weather-table-time">Morning</span>
-                                    <span class="weather-table-temp">4°</span>
+                                    <span class="weather-table-time">Sáng</span>
+                                    <span class="weather-table-temp">29°</span>
                                     <img src="images/weatherIcon/day/113.png" alt="">
                                     <span class="percent-rain">--</span>
                                 </a>
                             </div>
                             <div class="weather-table-col">
                                 <a href="#" class="d-flex flex-column align-items-center justify-content-between p-1">
-                                    <span class="weather-table-time">Afternoon</span>
-                                    <span class="weather-table-temp">4°</span>
+                                    <span class="weather-table-time">Trưa</span>
+                                    <span class="weather-table-temp">32°</span>
                                     <img src="images/weatherIcon/day/113.png" alt="">
                                     <span class="percent-rain">--</span>
                                 </a>
                             </div>
                             <div class="weather-table-col active">
                                 <a href="#" class="d-flex flex-column align-items-center justify-content-between p-1">
-                                    <span class="weather-table-time">Evening</span>
-                                    <span class="weather-table-temp">4°</span>
+                                    <span class="weather-table-time">Chiều</span>
+                                    <span class="weather-table-temp">28°</span>
                                     <img src="images/weatherIcon/night/227.png" alt="">
                                     <span class="percent-rain">
                                         <svg viewBox="0 -2 5 10">
@@ -445,8 +447,8 @@
                             </div>
                             <div class="weather-table-col next">
                                 <a href="#" class="d-flex flex-column align-items-center justify-content-between p-1">
-                                    <span class="weather-table-time">Overnight</span>
-                                    <span class="weather-table-temp">4°</span>
+                                    <span class="weather-table-time">Tối</span>
+                                    <span class="weather-table-temp">25°</span>
                                     <img src="images/weatherIcon/night/227.png" alt="">
                                     <span class="percent-rain">
                                         <svg viewBox="0 -2 5 10">
@@ -458,15 +460,15 @@
                                 </a>
                             </div>
                         </div> 
-                        <button class="primary-btn py-2 px-3">Next Hours</button>
+                        <button class="primary-btn py-2 px-3">Xem Thêm</button>
                     </div>
                 </div>
                 <div class="card-content p-3 mt-3">
-                    <h2 class="card-heading">Weather Today in California, MD</h2>
+                    <h2 class="card-heading">Thời tiết tại Tp. Hồ Chí Minh, Việt Nam</h2>
                     <div class="d-flex justify-content-between mx-2 mx-lg-5 mb-3">
                         <div class="flex-grow-1 d-flex flex-column">
-                            <span class="weather-details-temp-feelslike">Feels like</span>
-                            <span class="weather-details-temp-value">4°</span>
+                            <span class="weather-details-temp-feelslike">Dự đoán</span>
+                            <span class="weather-details-temp-value">29°</span>
                         </div>
                         <div class="weather-details-sunrise d-flex flex-column align-items-end justify-content-end">
                             <img src="images/weatherIcon/day/395.png" alt="" class="mx-auto">
@@ -486,112 +488,118 @@
                         <div class="weather-details-row d-flex justify-content-between py-3 px-2 px-lg-5">
                             <span class="">
                                 <i class="fa-solid fa-temperature-high"></i>
-                                High / Low
+                                Thấp / Cao
                             </span>
-                            <span class="">--/30°</span>
+                            <span class="">27/32°</span>
                         </div>
                         <div class="weather-details-row d-flex justify-content-between py-3 px-2 px-lg-5">
                             <span class="">
                                 <i class="fa-solid fa-water"></i>
-                                Dew Point
+                                Điểm sương
                             </span>
                             <span class="">26°</span>
                         </div>
                         <div class="weather-details-row d-flex justify-content-between py-3 px-2 px-lg-5">
                             <span class="">
                                 <i class="fa-solid fa-circle-half-stroke"></i>
-                                Moon Phase
+                                Chu kì mặt trăng
                             </span>
-                            <span class="">Waning Crescent</span>
+                            <span class="">Trăng khuyết</span>
                         </div>
                         <div class="weather-details-row d-flex justify-content-between py-3 px-2 px-lg-5">
                             <span class="">
                                 <i class="fa-regular fa-sun"></i>
-                                UV Index
+                                Chỉ số UV
                             </span>
                             <span class="">0</span>
                         </div>
                         <div class="weather-details-row d-flex justify-content-between py-3 px-2 px-lg-5">
                             <span class="">
                                 <i class="fa-solid fa-wind"></i>
-                                Wind
+                                Sức Gió
                             </span>
-                            <span class="">5 mph</span>
+                            <span class="">8.04672 km/h</span>
                         </div>
                         <div class="weather-details-row d-flex justify-content-between py-3 px-2 px-lg-5">
                             <span class="">
                                 <i class="fa-solid fa-droplet"></i>
-                                Humidity
+                                Độ ẩm
                             </span>
                             <span class="">80%</span>
                         </div>
                         <div class="weather-details-row d-flex justify-content-between py-3 px-2 px-lg-5">
                             <span class="">
                                 <i class="fa-solid fa-eye"></i>
-                                Visibility
+                                Tầm nhìn
                             </span>
                             <span class="">10 mi</span>
                         </div>
                         <div class="weather-details-row d-flex justify-content-between py-3 px-2 px-lg-5">
                             <span class="">
                                 <i class="fa-solid fa-arrows-down-to-line"></i>
-                                Pressure
+                                Áp suất khí quyển
                             </span>
                             <span class="">30.1 in</span>
                         </div>
                     </div>
                 </div>
                 <div class="card-content p-3 mt-3">
-                    <h2 class="card-heading">Don't Miss</h2>
-                    <div class="media-list d-flex align-items-center">
-                        <div class="d-flex flex-column align-items-center justify-content-between py-3 px-2">
-                            <a href="#" class="d-block rlt media-item-link">
-                                <i class="media-play-icon fa-regular fa-circle-play"></i>
-                                <img src="images/DCT_SPECIAL101_1280x720.webp" alt="" class="img-fluid">
-                            </a>
-                            <p class="media-item-desc">
-                                <a href="#">Get the latest weather forecast for today in California, MD</a>
-                            </p>
-                        </div> 
-                        <div class="d-flex flex-column align-items-center justify-content-between py-3 px-2">
-                            <a href="#" class="d-block rlt media-item-link">
-                                <i class="media-play-icon fa-regular fa-circle-play"></i>
-                                <img src="images/DCT_SPECIAL101_1280x720.webp" alt="" class="img-fluid">
-                            </a>
-                            <p class="media-item-desc">
-                                <a href="#">Get the latest weather forecast for today in California, MD</a>
-                            </p>
-                        </div>  
-                        <div class="d-flex flex-column align-items-center justify-content-between py-3 px-2">
-                            <a href="#" class="d-block rlt media-item-link">
-                                <i class="media-play-icon fa-regular fa-circle-play"></i>
-                                <img src="images/DCT_SPECIAL101_1280x720.webp" alt="" class="img-fluid">
-                            </a>
-                            <p class="media-item-desc">
-                                <a href="#">Get the latest weather forecast for today in California, MD</a>
-                            </p>
-                        </div>  
-                        <div class="d-flex flex-column align-items-center justify-content-between py-3 px-2">
-                            <a href="#" class="d-block rlt media-item-link">
-                                <i class="media-play-icon fa-regular fa-circle-play"></i>
-                                <img src="images/DCT_SPECIAL101_1280x720.webp" alt="" class="img-fluid">
-                            </a>
-                            <p class="media-item-desc">
-                                <a href="#">Get the latest weather forecast for today in California, MD</a>
-                            </p>
-                        </div>   
+                    <h2 class="card-heading">Tin nổi bật</h2>
+                    <div class="carousel-media">
+                       <div class="item">
+                            <div class="d-flex flex-column align-items-center justify-content-between py-3 px-2">
+                                <a href="#" class="d-block rlt media-item-link">
+                                    <i class="media-play-icon fa-regular fa-circle-play"></i>
+                                    <img src="images/1708040744-831-thumbnail-width74.webp" alt="" class="img-fluid">
+                                </a>
+                                <p class="media-item-desc">
+                                    <a href="#">Thời tiết ngày 21/2: Nắng nóng tiếp diễn ở Nam bộ, có nơi trên 35°C</a>
+                                </p>
+                            </div> 
+                       </div>
+                       <div class="item">
+                            <div class="d-flex flex-column align-items-center justify-content-between py-3 px-2">
+                                <a href="#" class="d-block rlt media-item-link">
+                                    <i class="media-play-icon fa-regular fa-circle-play"></i>
+                                    <img src="images/1708084148-4-thumbnail-width740h.webp" alt="" class="img-fluid">
+                                </a>
+                                <p class="media-item-desc">
+                                    <a href="#">Thời tiết cuối tuần: Miền Bắc rét về đêm và sáng, miền Nam có nơi nắng nóng</a>
+                                </p>
+                            </div> 
+                       </div> 
+                       <div class="item">
+                            <div class="d-flex flex-column align-items-center justify-content-between py-3 px-2">
+                                <a href="#" class="d-block rlt media-item-link">
+                                    <i class="media-play-icon fa-regular fa-circle-play"></i>
+                                    <img src="images/1708247506-713-thumbnail-width74.webp" alt="" class="img-fluid">
+                                </a>
+                                <p class="media-item-desc">
+                                    <a href="#">Nắng nóng đến sớm, mùa hè năm nay có thể sẽ gay gắt hơn mọi năm</a>
+                                </p>
+                            </div> 
+                       </div>
+                       <div class="item">
+                            <div class="d-flex flex-column align-items-center justify-content-between py-3 px-2">
+                                <a href="#" class="d-block rlt media-item-link">
+                                    <i class="media-play-icon fa-regular fa-circle-play"></i>
+                                    <img src="images/adt1708225062-189f80408b42261c7f.webp" alt="" class="img-fluid">
+                                </a>
+                                <p class="media-item-desc">
+                                    <a href="#">Hà Nội sắp đón những ngày nóng bất thường trong tháng 2</a>
+                                </p>
+                            </div>
+                       </div>
                     </div>
                 </div>
             </div>
             <div class="side-content">
                 <div class="card-content p-3 mt-3">
-                    <div class="air-quality">
-                        <canvas class="air-quality-chart flex-grow-0" id="donut-chart"></canvas>
-                        <p class="air-quality-desc flex-grow-1">
-                            Air quality is acceptable; however, for some pollutants there may be a moderate health concern for a very small number of people who are unusually sensitive to air pollution.
-                        </p>
-                    </div>
-                    <button class="primary-btn py-2 px-3">See details</button>
+                    <canvas class="air-quality-chart flex-grow-0" id="donut-chart"></canvas>
+                    <p class="air-quality-desc flex-grow-1">
+                        Thời tiết tốt, không gây ảnh hưởng đến sức khỏe của bạn và người khác. 
+                    </p>
+                    <button class="primary-btn py-2 px-3">Chi tiết</button>
                 </div>
             </div>
         </div>
@@ -624,35 +632,20 @@
                     <span class="d-block footer-heading my-3">Tin Tức</span>
                     <ul class="footer-list pl-4 m-0">
                         <li class="py-2">
-                            <a href="#">Lorem ipsum dolor sit amet</a>
+                            <a href="#">Xem thời tiết tại tỉnh Đồng Nai</a>
                         </li>
                         <li class="py-2">
-                            <a href="#">Lorem ipsum dolor sit amet</a>
+                            <a href="#">Cập nhật tình hình thời tiết gần đây tại địa phương</a>
                         </li>
                         <li class="py-2">
-                            <a href="#">Lorem ipsum dolor sit amet</a>
+                            <a href="#">Cảnh báo bão lớn tại các tỉnh miền trung</a>
                         </li>
                         <li class="py-2">
-                            <a href="#">Lorem ipsum dolor sit amet</a>
+                            <a href="#">Động đất lớn tại Nhật bản</a>
                         </li>
                     </ul>
                 </div>
                 <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
-                    <span class="d-block footer-heading my-3">Danh mục</span>
-                    <ul class="footer-list pl-4 m-0">
-                        <li class="py-2">
-                            <a href="#">Lorem ipsum dolor sit amet</a>
-                        </li>
-                        <li class="py-2">
-                            <a href="#">Lorem ipsum dolor sit amet</a>
-                        </li>
-                        <li class="py-2">
-                            <a href="#">Lorem ipsum dolor sit amet</a>
-                        </li>
-                        <li class="py-2">
-                            <a href="#">Lorem ipsum dolor sit amet</a>
-                        </li>
-                    </ul>
                 </div>
                 <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
                     <span class="d-block footer-heading my-3">Liên hệ</span>
@@ -673,7 +666,7 @@
                     </a>
                 </div>
             </div>
-            <p class="footer-cpright text-center m-0">
+            <p class="footer-cpright text-center m-0 py-3">
                 &copy; make by Basb <a href="#">@BasB</a>
             </p>
         </div>
@@ -698,9 +691,113 @@
                     items:2
                 },
                 1000:{
-                    items:3
+                    items:2
                 }
             }
+        });
+        // carousel media 
+        $('.carousel-media').owlCarousel({
+            loop: false,
+            margin:10,
+            nav:true,
+            autoplay: true,
+            autoplayTimeout: 3000,
+            autoplayHoverPause: true,
+            responsive:{
+                0:{
+                    items:1,
+                },
+                600:{
+                    items:2,
+                },
+                1000:{
+                    items:4,
+                }
+            }
+        });
+        // text inside donut chart
+        Chart.pluginService.register({
+        beforeDraw: function(chart) {
+            if (chart.config.options.elements.center) {
+            // Get ctx from string
+            var ctx = chart.chart.ctx;
+
+            // Get options from the center object in options
+            var centerConfig = chart.config.options.elements.center;
+            var fontStyle = centerConfig.fontStyle || 'Arial';
+            var txt = centerConfig.text;
+            var color = centerConfig.color || '#000';
+            var maxFontSize = centerConfig.maxFontSize || 75;
+            var sidePadding = centerConfig.sidePadding || 20;
+            var sidePaddingCalculated = (sidePadding / 100) * (chart.innerRadius * 2)
+            // Start with a base font of 30px
+            ctx.font = "30px " + fontStyle;
+
+            // Get the width of the string and also the width of the element minus 10 to give it 5px side padding
+            var stringWidth = ctx.measureText(txt).width;
+            var elementWidth = (chart.innerRadius * 2) - sidePaddingCalculated;
+
+            // Find out how much the font can grow in width.
+            var widthRatio = elementWidth / stringWidth;
+            var newFontSize = Math.floor(30 * widthRatio);
+            var elementHeight = (chart.innerRadius * 2);
+
+            // Pick a new font size so it will not be larger than the height of label.
+            var fontSizeToUse = Math.min(newFontSize, elementHeight, maxFontSize);
+            var minFontSize = centerConfig.minFontSize;
+            var lineHeight = centerConfig.lineHeight || 25;
+            var wrapText = false;
+
+            if (minFontSize === undefined) {
+                minFontSize = 20;
+            }
+
+            if (minFontSize && fontSizeToUse < minFontSize) {
+                fontSizeToUse = minFontSize;
+                wrapText = true;
+            }
+
+            // Set font settings to draw it correctly.
+            ctx.textAlign = 'center';
+            ctx.textBaseline = 'middle';
+            var centerX = ((chart.chartArea.left + chart.chartArea.right) / 2);
+            var centerY = ((chart.chartArea.top + chart.chartArea.bottom) / 2);
+            ctx.font = fontSizeToUse + "px " + fontStyle;
+            ctx.fillStyle = color;
+
+            if (!wrapText) {
+                ctx.fillText(txt, centerX, centerY);
+                return;
+            }
+
+            var words = txt.split(' ');
+            var line = '';
+            var lines = [];
+
+            // Break words up into multiple lines if necessary
+            for (var n = 0; n < words.length; n++) {
+                var testLine = line + words[n] + ' ';
+                var metrics = ctx.measureText(testLine);
+                var testWidth = metrics.width;
+                if (testWidth > elementWidth && n > 0) {
+                lines.push(line);
+                line = words[n] + ' ';
+                } else {
+                line = testLine;
+                }
+            }
+
+            // Move the center up depending on line height and number of lines
+            centerY -= (lines.length / 2) * lineHeight;
+
+            for (var n = 0; n < lines.length; n++) {
+                ctx.fillText(lines[n], centerX, centerY);
+                centerY += lineHeight;
+            }
+            //Draw text in center
+            ctx.fillText(line, centerX, centerY);
+            }
+        }
         });
         // donut chart
         const DonutChart = new Chart('donut-chart', {
@@ -722,8 +819,56 @@
                 y: {
                 beginAtZero: true
                 }
+            },
+            elements: {
+                center: {
+                text: '50%',
+                color: '#000', // Default is #000000
+                fontStyle: 'Montserrat', // Default is Arial
+                sidePadding: 20, // Default is 20 (as a percentage)
+                minFontSize: 20, // Default is 20 (in px), set to false and text will not wrap.
+                lineHeight: 25 // Default is 25 (in px), used for when text wraps
+                }
             }
             }
+        });
+        // search history
+        $('.search-form-input').on('focus', function() {
+            $('.search-history').toggleClass('active');
+        });
+        $('.search-form-input').on('blur', function() {
+            $('.search-history').toggleClass('active');
+        });
+        // language menu active
+        $(document).on('click', function(event) {
+            var languagesMenu = $('.languages-menu');
+            var languagesSelecter = document.querySelector('.languages-selecter-btn');
+            console.log(languagesSelecter);
+            if (event.target === languagesSelecter && languagesMenu.hasClass('active') === false) {
+                languagesMenu.addClass('active');
+                console.log('click');
+            } else if (!languagesMenu.is(event.target) && languagesMenu.has(event.target).length === 0) {
+                languagesMenu.removeClass('active');
+            }
+        });
+        // languages lists
+        $('.languages-menu-title').on('click', function() {
+            $(this).next().toggleClass('active');
+            $(this).parent().siblings().children('.languages-menu-lists').removeClass('active');
+        });
+        // unit selecter
+        const buttons = document.querySelectorAll('.unit-selecter-btn');
+        // Add click event listener to each button
+        buttons.forEach(function(button) {
+            button.addEventListener('click', function() {
+                // Remove active class from all buttons
+                buttons.forEach(function(btn) {
+                    btn.classList.remove('active');
+                });
+
+                // Add active class to clicked button
+                this.classList.add('active');
+            });
         });
     </script>
 </body>
