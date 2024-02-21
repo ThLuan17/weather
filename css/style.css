@@ -577,11 +577,14 @@ img {
   text-transform: capitalize;
 }
 .footer-about {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   font-weight: 400;
 }
+.footer-about a {
+  font-weight: 700;
+}
 .footer-list {
- font-size: 1.3rem;
+ font-size: 1.4rem;
  font-weight: 400;
 }
 .footer-list a {
@@ -590,8 +593,24 @@ img {
   -webkit-box-orient: vertical;
   overflow: hidden;  
 }
+.footer-contact-icon {
+  font-size: 2rem;
+  color: var(--color-5);
+  cursor: pointer;
+  padding: 20px;
+  background-color: var(--color-6);
+  border-radius: 50%;
+}
+.footer-contact-icon i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
 .footer-contact-icon:hover {
   transform: scale(1.1);
+  color: var(--color-7);
+  background-color: var(--color-1);
   transition: var(--tran-1);
 }
 .footer-cpright {
