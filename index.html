@@ -842,9 +842,9 @@
         // language menu active
         $(document).on('click', function(event) {
             var languagesMenu = $('.languages-menu');
-            var languagesSelecter = document.querySelector('.languages-selecter-btn');
-            console.log(languagesSelecter);
-            if (event.target === languagesSelecter && languagesMenu.hasClass('active') === false) {
+            var languagesSelecter = document.querySelector('.languages-selecter');
+            console.log(languagesSelecter.contains(event.target));
+            if (languagesSelecter.contains(event.target) && languagesMenu.hasClass('active') === false) {
                 languagesMenu.addClass('active');
                 console.log('click');
             } else if (!languagesMenu.is(event.target) && languagesMenu.has(event.target).length === 0) {
