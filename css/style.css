@@ -722,6 +722,9 @@ img {
   .weather-table-temp {
     font-size: 4rem;
   }
+  .weather-details-temp-value {
+    font-size: 4rem;
+  }
   .weather-table-col img {
     width: 60px;
   }
@@ -765,7 +768,7 @@ img {
     font-size: 6rem;
   }
   .weather-details-temp-value {
-    font-size: 4rem;
+    font-size: 5rem;
   }
   .weather-table-col img {
     width: 60px;
@@ -812,6 +815,9 @@ img {
   }
   .weather-table-temp {
     font-size: 7rem;
+  }
+  .weather-details-temp-value {
+    font-size: 6rem;
   }
   .weather-table-col img {
     width: 64px;
